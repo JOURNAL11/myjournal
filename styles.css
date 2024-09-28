@@ -19,15 +19,22 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
 }
 
 header ul {
     list-style: none;
     display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 header ul li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 header ul li a {
@@ -39,11 +46,17 @@ main {
     padding: 20px;
     max-width: 900px;
     margin: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
     text-align: center;
     margin: 40px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
 }
 
 .latest-blogs {
@@ -58,6 +71,7 @@ img.post-image {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+    border-radius: 8px;
 }
 
 footer {
@@ -84,4 +98,66 @@ video {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .latest-blogs h3 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .latest-blogs h3 {
+        font-size: 1.2rem;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }
