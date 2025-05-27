@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health & Fitness Blog</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Love You Asta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #a8b5a2;
+      --cream: #f5f5f0;
+      --dark-sage: #7d8f75;
+      --accent: #d3e0dc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--cream);
+      color: var(--dark-sage);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--sage);
+    }
+
+    .decor {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: var(--dark-sage);
+    }
+
+    .btn {
+      background-color: var(--sage);
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--dark-sage);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .decor {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Health & Fitness</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Welcome to Your Health Journey</h2>
-            <p>Explore our insights on fitness, mental health, and overall well-being.</p>
-        </section>
-
-        <section class="latest-blogs">
-            <h2>Latest Blogs</h2>
-            <article>
-                <h3><a href="blog.html">The Importance of Mental Health in Fitness</a></h3>
-                <p>Mental and physical health are interconnected. Read more to understand how mental well-being enhances physical fitness.</p>
-            </article>
-            <article>
-                <h3><a href="blog.html">Top 10 Fitness Tips for Beginners</a></h3>
-                <p>Starting your fitness journey? Check out these tips to get started the right way.</p>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Health & Fitness Blog. All rights reserved.</p>
-    </footer>
+  <h1>I Love You Asta</h1>
+  <p class="decor">You bring calm and joy like sage and sunshine — forever grateful for your love.</p>
+  <button class="btn" onclick="alert('Asta, will you be mine forever? 💍')">Say Yes 💌</button>
 </body>
 </html>
+
